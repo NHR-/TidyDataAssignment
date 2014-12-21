@@ -6,25 +6,41 @@ Intro
 
 This code book describes the contents of tidy_data1.txt and tidy_data2.txt, the tidy data sets created as part of a course project as per instructions. The purpose of the project is to process raw data, collected from the accelerometers from the Samsung Galaxy S smartphone, and to prepare tidy data that can be used for later analysis. See README for more details.
 
-tidy_data1.txt and tidy_data2.txt are the outputs of run_analysis.R (see below).
+tidy_data1.txt and tidy_data2.txt are the outputs of run_analysis.R.
 
 run_analysis.R
 -------------------
 
 The tasks described in the assignment are broken into the following steps; to each, a function is dedicated in run_analysis.R which are called sequentially. 
 
-Step 0: Preparing raw data:
+Step 0 - Preparing raw data:
+
 get_raw_data() prepares the raw data; either by downloading and unzipping or - to avoid downloading and unzipping hundreds of MB files over and over - by confirming their existence in correct format.
+  
+  
+Step 1 - Merging raw data: 
 
-Step 1: Merging raw data. merge_raw_data() loads raw data into data.frames, merges them into a single data.frame, and returns it.
+merge_raw_data() loads raw data into data.frames, merges them into a single data.frame, and returns it.
+  
+  
+Step 2 - Extracting mean and STD measurements:
 
-Step 2: Extracting mean and STD measurements. subset_mean_and_STD() subsets data and extracts only the measurements on mean and STD and returns the updated data.frame.
+subset_mean_and_STD() subsets data and extracts only the measurements on mean and STD and returns the updated data.frame.
+  
+  
+Step 3 - Using activity names instead of activity labels:
 
-Step 3: Using activity names instead of activity labels. update_activity_labels(), using label-name mapping, updates the "Activity_type" column and returns the updated data.frame.
+update_activity_labels(), using label-name mapping, updates the "Activity_type" column and returns the updated data.frame.
+  
+  
+Step 4 - Using descriptive labels and Saving the data.frame into tidy_data1.txt:
 
-Step 4: Using descriptive labels and Saving the data.frame into tidy_data1.txt. create_and_write_output_1() does so.
+create_and_write_output_1() does so.
+  
+  
+Step 5 - Creating and saving average of each variable for each activity and each subject: 
 
-Step 5: Creating and saving average of each variable for each activity and each subject. create_and_write_output_2 does so and saves the result into tidy_data2.txt.
+create_and_write_output_2 does so and saves the result into tidy_data2.txt.
 
 
 tidy_data1.txt 
