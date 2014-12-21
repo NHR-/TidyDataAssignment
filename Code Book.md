@@ -24,7 +24,7 @@ Step 5: Creating and saving average of each variable for each activity and each 
 tidy_data1.txt (UPDATE)
 ------------------
 
-Output of Step4. see features.txt for more details on columns properties.
+Output of Step4. (see above) see features.txt for more details on columns properties.
 
 
 tidy_data2.txt (UPDATE)
