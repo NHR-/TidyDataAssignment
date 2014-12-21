@@ -64,3 +64,9 @@ tidy_data1.txt  and tidy_data2.txt
 ------------------
 
 Outputs of run_analysis.R. See Code Book for more details
+
+
+features_info.txt and features.txt
+------------------
+
+features as described by the creators of the original data sets.
