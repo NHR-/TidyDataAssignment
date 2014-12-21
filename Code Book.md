@@ -4,15 +4,17 @@ TidyDataAssignment - Code Book
 Intro
 ------------------
 
-This code book contains information about the contents of tidy_data1.txt and tidy_data2.txt. These two tidy data sets are created as part of a course project as per instructions. The purpose of the project is to process raw data, collected from the accelerometers from the Samsung Galaxy S smartphone, and to prepare tidy data that can be used for later analysis. See README for more details. tidy_data1.txt and tidy_data2.txt are the outputs of run_analysis.R (see below).
+This code book describes the contents of tidy_data1.txt and tidy_data2.txt, the tidy data sets created as part of a course project as per instructions. The purpose of the project is to process raw data, collected from the accelerometers from the Samsung Galaxy S smartphone, and to prepare tidy data that can be used for later analysis. See README for more details.
 
+tidy_data1.txt and tidy_data2.txt are the outputs of run_analysis.R (see below).
 
 run_analysis.R
 -------------------
 
 The tasks described in the assignment are broken into the following steps; to each, a function is dedicated in run_analysis.R which are called sequentially. 
 
-Step 0: Preparing raw data. get_raw_data() prepares the raw data; either by downloading and unzipping or - to avoid downloading and unzipping hundreds of MB files over and over - by confirming their existence in correct format.
+Step 0: Preparing raw data:
+get_raw_data() prepares the raw data; either by downloading and unzipping or - to avoid downloading and unzipping hundreds of MB files over and over - by confirming their existence in correct format.
 
 Step 1: Merging raw data. merge_raw_data() loads raw data into data.frames, merges them into a single data.frame, and returns it.
 
