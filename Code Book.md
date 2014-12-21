@@ -13,7 +13,7 @@ run_analysis.R
 
 The tasks described in the assignment are broken into the following steps; to each, a function is dedicated in run_analysis.R which are called sequentially. 
 
-### Step 0 - Preparing raw data:
+#### Step 0 - Preparing raw data:
 
 get_raw_data() prepares the raw data; either by downloading and unzipping or - to avoid downloading and unzipping hundreds of MB files over and over - by confirming their existence in correct format.
   
